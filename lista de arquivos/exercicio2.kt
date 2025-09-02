@@ -11,7 +11,7 @@ data class ConfiguracaoUsuario(
 )
 
 fun main(){
-    val usuario = ConfiguracaoUsuario("Gustavo", "Portugues", "escuro")
+    val usuario = ConfiguracaoUsuario("Rian", "Portugues", "escuro")
     val json = Json { prettyPrint = true }.encodeToString(usuario)
 
     File("config.json").writeText(json)
